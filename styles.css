@@ -12,7 +12,12 @@ body {
 
   h1 {
     font-size: 20px;
-    color: rgb(33, 140, 182)
+    color: rgb(33, 140, 182);
+  }
+  h4{
+    color: rgb(33, 140, 182);
+    font-size: 16px;
+    text-align: initial;
   }
   /* Giving our navbar some padding and a background color */
   .navbar {
@@ -40,17 +45,19 @@ body {
   }
 
   .deb-main{
-    background: lightgrey;
+    background: whitesmoke;
   }
   .deb-side{
-    background: lightgrey;
+    background: whitesmoke;
   }
   
   .deb-container{
     background: rgb(218, 223, 228);
     min-height: 100vh;
   }
-  
+  .deb-comp{
+    background-color: white;
+  }
   .nav-select {
     visibility: hidden;
   }
