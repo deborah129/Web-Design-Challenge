@@ -10,9 +10,22 @@ body {
     line-height: 1.6;
   }
 
+  .par{
+    font-size: 30px;
+  }
+
+  .a{
+    text-align: center;
+  }
   h1 {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(33, 140, 182);
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 40px;
+    color: rgb(33, 140, 182);
+    font-weight: bold;
   }
   h4{
     color: rgb(33, 140, 182);
@@ -21,10 +34,12 @@ body {
   }
   /* Giving our navbar some padding and a background color */
   .navbar {
-    padding: 10px;
-    background: white;
+    padding: 40px;
+    background-color:whitesmoke;
   }
-  
+  .navbar-brand {
+    background-color:whitesmoke;
+  }
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
   .navbar li {
     display: block;
@@ -43,18 +58,32 @@ body {
     color: #000;
     text-decoration: none;
   }
-
   .deb-main{
     background: whitesmoke;
+
   }
   .deb-side{
-    background: whitesmoke;
+    background: white;
+    height: 500px;
   }
   
   .deb-container{
     background: rgb(218, 223, 228);
-    min-height: 100vh;
+    min-height: 70vh;
   }
+  .clearfix:before,
+  .clearfix:after{
+    content:" ";
+    display: block;
+  }
+  
+  
+  .clearfix:after {
+    clear:both;
+}
+.clearfix{
+  *zoom:1;
+}
   .deb-comp{
     background-color: white;
   }
@@ -67,6 +96,7 @@ body {
     margin:2%;
     
   }
+
   /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
   @media (max-width: 480px) {
     .navbar li {
